@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Корзина+количество.css">
+    <title>Макет интернет-магазин</title>
+</head>
+<body>
+
+<div class="box-god">
+    <div>
+    <div class="flex-box">
+                <div class="card" data-id="01">
+                    <div class="card-pieces">
+                    <img class="img" src="https://cdn.farfor.ru/media/cache/36/ad/36ad33dc76fc15095bee8206df725ef7.jpg">
+                    <h2 class="item-title">Филадельфия</h2>
+                    <small data-items-in-box class="text-muted">6 шт</small>
+                    <div class="price">
+                        <span class="price_weight">350г</span>
+                        <span class="price_currency">15$</span>
+                    </div>
+                    <div class="items counter-wrapper">
+                            <button class="item__control" data-action="minus">-</button>
+                            <div class="text_counter" data-counter>1</div>
+                            <button class="item__control" data-action="plus">+</button>
+                    </div>
+                    <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                        + в корзину
+                    </button>
+                </div>
+                </div>
+            
+                <div class="card" data-id="02">
+                    <div class="card-pieces">
+                    <img class="img" src="https://cdn.farfor.ru/media/cache/a0/1b/a01bc7cb1284ea3ffa4abb3aca9dde0e.jpg">
+                    <h2 class="item-title">Канада</h2>
+                    <small data-items-in-box class="text-muted">6 шт</small>
+                    <div class="price">
+                        <span class="price_weight">500г</span>
+                        <span class="price_currency">13$</span>
+                    </div>
+                    <div class="items counter-wrapper">
+                            <button class="item__control" data-action="minus">-</button>
+                            <div class="text_counter" data-counter>1</div>
+                            <button class="item__control" data-action="plus">+</button>
+                    </div>
+                    <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                        + в корзину
+                    </button>
+                </div>
+                </div>
+    </div>
+
+    <div class="flex-box">
+        <div class="card-pieces">
+            <div class="card" data-id="03">
+                <img class="img" src="https://cdn.farfor.ru/media/cache/a5/11/a511b28d52efee3d48ea007f55608f37.jpg">
+                <h2 class="item-title">Калифорния</h2>
+                <small data-items-in-box class="text-muted">6 шт</small>
+                <div class="price">
+                    <span class="price_weight">1050г</span>
+                    <span class="price_currency">25$</span>
+                </div>
+                <div class="items counter-wrapper">
+                        <button class="item__control" data-action="minus">-</button>
+                        <div class="text_counter" data-counter>1</div>
+                        <button class="item__control" data-action="plus">+</button>
+                </div>
+                <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                    + в корзину
+                </button>
+            </div>
+            </div>
+        
+            <div class="card" data-id="04">
+                        
+                <div class="card-pieces">
+                <img class="img" src="https://piznay.com.ua/uploads/products/92.jpg">
+                <h2 class="item-title">Африка</h2>
+                <small data-items-in-box class="text-muted">6 шт</small>
+                <div class="price">
+                    <span class="price_weight">140г</span>
+                    <span class="price_currency">20$</span>
+                </div>
+                <div class="items counter-wrapper">
+                        <button class="item__control" data-action="minus">-</button>
+                        <div class="text_counter" data-counter>1</div>
+                        <button class="item__control" data-action="plus">+</button>
+                </div>
+                <button data-cart type="button" class="btn btn-block btn-outline-warning">
+                    + в корзину
+                </button>
+                        
+                </div>
+            </div>
+    </div>
+</div>
+
+
+
+<div class="korzina">
+                        <h2>Корзина</h2>
+                        <div data-cart-empty class="alert alert-secondary">Корзина пуста</div>
+                    <div class="cart-wrapper" data-id="04">
+                        
+                    </div>
+                    <div>
+                        <p data-cart-delivery class="none">
+                            <span>Доставка: </span><span class="delivery-cost">5$</span>
+                        </p>
+                        <p><span>Бесплатно при заказе от 150$</span></p>
+                        <p>
+                            <span>Итого: </span>
+                            <span class="total-price">0</span>
+                            <span> $</span>
+                        </p>
+                    </div>
+                    <div id="order-form" class="none">
+                        <span>Оформить заказ</span>
+                        <input type="text">
+                    </div>
+</div>
+                    
+
+
+
+
+
+</div>
+    <script src="Калькулятор для корзины(сумма).js"></script>
+    <script src="Переключение статуса корзины.js"></script>
+    <script src="Махинация с количеством.js"></script>
+    <script src="Работа с корзиной.js"></script>
+</body>
+</html>
